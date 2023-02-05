@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokarna Resort</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <meta name="keywords"
+        content="Gokarna Resort, Gokarna, gokarna itahari, gokarna resort bhaliya, Gokarna resort and fun park, gokarna resort fun park, resort gokarna, gokulam resort, Gokarna forest resort, gokulam resort, bhaliya">
+    <meta name="description" content=" Gokarna resort is one of the best tourist destination located in Eastern Nepal. It was
+    established in 2016 AD and from then on
+    It has become the heart of sundar haraincha.">
+    <meta name="author" content="Shekhar Stha">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.asparksys.com/medias/1675533249164.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+        integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!-- modal -->
+    <div class="modal fade" id="book" tabindex="-1" aria-labelledby="bookLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="bookLabel">Book Room</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formspree.io/f/mayzqrpd" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your name with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" id="phone" name="phone" class="form-control" id="phone">
+                        </div>
+
+                        <div>
+                            <textarea name="message" class="form-control" placeholder="Type your message..."
+                                id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning mt-4 fs-16 ms-auto text-white">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="nav-hero position-relative">
+        <!-- Nav -->
+        <section class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 container">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-20" href="#">
+                        <!-- <img class="logo" src="https://cdn.asparksys.com/medias/1675533249164.png" alt=""> -->
+                        <h2 class="text-warning fw-600">Triveni</h2>
+                    </a>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav">
+                            <li class="nav-item me-4">
+                                <a class="nav-link text-white fw-500 fs-16" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-4 dropdown">
+                                <a class="nav-link text-white fw-500 fs-16 dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#about">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#review">Reviews</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link text-white fw-500 fs-16" href="#room">Rooms</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link text-white fw-500 fs-16" href="#tiktok">Tiktok</a>
+                            </li>
+                            <li class="nav-item me-4 pt-1">
+                                <a class="nav-link text-white fw-500 text-white fs-14 btn btn-warning btn-small py-1"
+                                    href="#contact">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <div class="hero">
+            <img class="w-100 position-absolute top-0 img-fluid hero-img"
+                src="https://cdn.asparksys.com/medias/1675617419583.PNG" alt="Main Gate">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="text-center text-white ">Enjoy your <span class="text-warning">Weekend
+                        </span>with us by having fun boating, and many more..</h1>
+                    <button class="btn btn-warning">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="video container my-5">
+        <div class="row position-relative">
+            <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/9bzjNiCAOLo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-primary mb-5">Triveni Resort</h1>
+                <p class="fs-16">
+                    Triveni Riverside Resort is a unique and luxurious resort located in Sundar Haraincha-4 Dulari.
+                    Surrounded by serene rivers and lush greenery, Triveni Riverside Resort offers a tranquil and
+                    peaceful escape from the hustle and bustle of city life.
+                    <br><br>
+                    One of the highlights of the resort is its boating facility, which allows guests to explore the
+                    picturesque river and take in the stunning views. The resort also features one-of-a-kind igloo
+                    rooms, offering guests a truly unique and memorable experience.
+                </p>
+            </div>
+            <div class="circle position-absolute">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="room" class="rooms my-5">
+        <div class="container">
+            <div class="row gap-4">
+                <div class="col-lg-5">
+                    <div class="room-images">
+                        <img src="https://cdn.asparksys.com/medias/1675612280847.jpg" alt="">
+                        <img src="https://cdn.asparksys.com/medias/1675612280847.jpg" alt="">
+                        <img src="https://cdn.asparksys.com/medias/1675612280847.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="text-white mb-4">Igloo Room with AC </h1>
+                    <h3 class="text-warning fw-500 mb-4">Price Nrs 2500 <span
+                            class="text-decoration-line-through text-info fs-16">Nrs 3500</span></h3>
+                    <p class="fs-15 text-white mb-4">This room contains AC and attach bathroom suitable for Couples,
+                        Family
+                        and Groups also we provide room servce 24*7.</p>
+                    <button data-bs-toggle="modal" data-bs-target="#book"
+                        class="btn btn-danger fs-18 text-white px-4">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="review" class="testimonial my-3">
+        <div class="container py-5">
+            <h1 class="header">
+                Visitors Review
+            </h1>
+            <div class="testimonial-carousel">
+                <!-- Inside the containing div, add one div for each slide -->
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <i class="fa-solid fa-quote-left quote-1"></i>
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="https://cdn.asparksys.com/medias/1675614019802.jpg" alt="" />
+                        <div class="">
+                            <h5 class="text-primary">Bikal Siwakoti</h5>
+                            <p class="text-info mb-1 fs-6 fw-normal">Itahari, Nepal</p>
+
+                        </div>
+                    </div>
+                    <p class="text-info mt-4">
+                        Ekdam Ramro service cha, boating haru garna ramailo cha. Roteping haru sab thok cha kta kt haru
+                        ko lagi pani
+                    </p>
+                    <i class="fa-solid fa-quote-left quote-2"></i>
+                </div>
+
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <i class="fa-solid fa-quote-left quote-1"></i>
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="https://cdn.asparksys.com/medias/1675614110924.jpg" alt="" />
+                        <div class="">
+                            <h5 class="text-primary">Aniket Kafle</h5>
+                            <p class="text-info mb-1 fs-6 fw-normal">Dulari, Sundar Haraincha</p>
+
+                        </div>
+                    </div>
+                    <p class="text-info mt-4">
+                        This place is best for nightstay with friends and family also the service is fast and the best
+                        part was igloo rooms.
+                    </p>
+                    <i class="fa-solid fa-quote-left quote-2"></i>
+                </div>
+
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <i class="fa-solid fa-quote-left quote-1"></i>
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="https://cdn.asparksys.com/medias/1675614217727.jpg" alt="" />
+                        <div class="">
+                            <h5 class="text-primary">Ram Sapkota</h5>
+                            <p class="text-info mb-1 fs-6 fw-normal">Bansbari, Sundar Haraincha</p>
+
+                        </div>
+                    </div>
+                    <p class="text-info mt-4">
+                        Picnic haru aunako lag ekdam ramro cha, school picnic haru auna saknu huncha bachha dekhi budo
+                        sablai perfect.
+                    </p>
+                    <i class="fa-solid fa-quote-left quote-2"></i>
+                </div>
+
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <i class="fa-solid fa-quote-left quote-1"></i>
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="https://cdn.asparksys.com/medias/1675614297568.jpg" alt="" />
+                        <div class="">
+                            <h5 class="text-primary">Alish Khadka</h5>
+                            <p class="text-info mb-1 fs-6 fw-normal">Dharan, Nepal</p>
+
+                        </div>
+                    </div>
+                    <p class="text-info mt-4">
+                        Ekdam ramro ambience cha, staff haruni ekdam friendly. restaurant ma ni ekdam ramro khana cha.
+                        much recommended.
+                    </p>
+                    <i class="fa-solid fa-quote-left quote-2"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section pb-5">
+        <div class="container pt-5">
+            <h1 class="contact-section__primary-title">Let’s stay connected</h1>
+            <div class="contact-section__wrapper">
+                <!-- Contact Details -->
+                <div class="contact-section">
+                    <div class="row contact-section__row">
+                        <div class="col-lg-7 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-4 contact-section__contact-details">
+                                    <div class="details">
+                                        <span class="details__icons"><img
+                                                src="https://cdn.asparksys.com/medias/1666259171836.svg" /></span>
+                                        <span class="details__text">Address</span>
+                                        <span class="details__address">Sundar haraincha - 4 </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 contact-section__contact-details">
+                                    <div class="details">
+                                        <span class="details__icons"><img
+                                                src="https://cdn.asparksys.com/medias/1666259197935.svg" /></span>
+                                        <span class="details__text">Phone</span>
+                                        <span class="details__address"><a href="tel:9852059336">9852059336</a>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 contact-section__contact-details">
+                                    <div class="details">
+                                        <span class="details__icons"><img
+                                                src="https://cdn.asparksys.com/medias/1666259213353.svg" /></span>
+                                        <span class="details__text">Email</span>
+                                        <span class="details__address"><a
+                                                href="mailto:gokarnaresort01@gmail.com">triveniresort@gmail.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.899050930613!2d87.28683121817303!3d26.65171443195431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6c3d37f835d3%3A0x19eac9fae6b98b6a!2sGokarna%20Restaurant%20and%20Fun%20Park!5e0!3m2!1sen!2snp!4v1670321415712!5m2!1sen!2snp"
+                                        style="border: 0" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTACT FORM STARTS HERE -->
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="contact-section__form">
+                                <form class="form-group" action="https://formspree.io/f/xeqweyrd" method="POST">
+                                    <h1 class="contact-form-right__form-title">Contact Us</h1>
+                                    <!-- Lead add 1st row  -->
+                                    <div class="contact-form-right__row">
+                                        <!-- Full Name  -->
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="name" class="contact-form-right__title">
+                                                Full Name<span class="red-star">*</span>
+                                            </label>
+                                            <div class="">
+                                                <input type="text" id="name" name="name" placeholder="Enter full name"
+                                                    class="form-control" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lead add 3rd row  -->
+                                    <div class="contact-form-right__row">
+                                        <!-- Email  -->
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="email" class="contact-form-right__title">
+                                                Email<span class="red-star">*</span>
+                                            </label>
+                                            <div class="">
+                                                <input type="email" name="email" id="email"
+                                                    placeholder="Enter your email address" class="form-control"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lead add 3rd row  -->
+                                    <div class="contact-form-right__row">
+                                        <!-- Email  -->
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="message" class="contact-form-right__title">
+                                                Message<span class="red-star">*</span>
+                                            </label>
+                                            <div class="">
+                                                <textarea name="message" class="form-control"
+                                                    placeholder="Type your message..." id="exampleFormControlTextarea1"
+                                                    rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Lead add 6th row  -->
+                                    <div class="contact-form-right__btns">
+                                        <button type="submit" value="Send" class="btn contact-form-btn w-100 mt-5">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq my-3" id="faq">
+        <div class="container py-5">
+            <h1 class="header">
+                Frequently Asked Questions
+            </h1>
+            <div class="row">
+                <div class="accordion col-lg col-12" id="accordionExample ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingOne">
+                            <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class=""> Where is it located?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info ">
+                                <p>
+                                    It is located in Dulari, Sundar Haraincha, Nepal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingTwo">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="">Can we book the venue for parties and meeting ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                                <p>
+                                    Yes, you can book our venue for parties, meetings or any type of events.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingThree">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class=""> How much is boating fee ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                                <p>
+                                    For the adults - 200 RS <br>
+                                    For childrens - 150 Rs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion col-lg col-12" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingFour">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class=""> How much does entry fee cost ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                                The entry fee for gate costs 50 Rs
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingFive">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span class=""> How much does a room cost ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                                The price for the room varies between 2000 to 3000.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-5 d-flex justify-content-center">
+                More Questions?
+                <a href="./contact.html">
+                    <span class="text-secondary ps-1"> <u>Contact Us</u></span></a>
+            </p>
+        </div>
+    </section>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div id="tiktok" class="elfsight-app-f94ce0e6-441e-4715-b0d0-4558656f7299"></div>
+
+
+
+
+    <footer>
+        <hr />
+        <div class="container mt-5">
+            <div class="row fw-bold">
+                <div class="col-lg pe-lg-5 me-lg-5 col-12 mb-lg-0 mb-5 text-lg-left">
+                    <img src="https://cdn.asparksys.com/medias/1670344084376.png" alt="logo" width="50" height="50"
+                        class="d-inline-block my-auto mb-3" />
+                    <p class="text-info fw-bold">
+                        Triveni is located in the heart of Sundar Haraincha and is best place
+                        for enjoyment.
+                    </p>
+                    <div class="d-flex justify-content-start">
+                        <a class="me-2" href="https://www.facebook.com/Triveniholiday/"><img
+                                src="https://cdn.asparksys.com/medias/1666170907576.png" alt="" /></a>
+                        <a class="me-2" href="https://youtu.be/9bzjNiCAOLo"><img
+                                src="https://cdn.asparksys.com/medias/1666170955862.png" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <p><strong class="text-primary h5 fw-bolder"> More Info</strong></p>
+                    <div class="text-info">
+                        <p><a href="#room">Book Now</a></p>
+                        <p><a href="#contact">Contact Us</a></p>
+                        <p><a href="#home">Home</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <p><strong class="text-primary h5 fw-bolder"> Quick Links</strong></p>
+                    <div class="text-info">
+
+                        <p><a href="#tiktok">Tiktok</a></p>
+                        <p><a href="#about">About Us</a></p>
+                        <p><a href="#faq">FAQ</a></p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <p><strong class="text-primary h5 fw-bolder"> Contact us</strong></p>
+                    <div class="text-info">
+                        <p class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            triveniresort@gmail.com
+                        </p>
+                        <p class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            <span> +977-9852060366</span>
+                        </p>
+                        <p class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                            <span>Dulari, Sundar Haraincha Nepal</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4" />
+            <div class="d-flex justify-content-sm-between flex-sm-row flex-column align-items-center text-info">
+                <p>Ⓒ Triveni 2022. All rights reserved.</p>
+                <p>
+                    Developed by
+                    <a href="https://shekharstha.com.np/" target="_blank"
+                        class="text-primary text-decoration-none">Shekhar Shrestha</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
+        integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

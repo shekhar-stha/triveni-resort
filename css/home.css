@@ -92,6 +92,7 @@
 
 .video {
   margin: 5rem auto !important;
+  overflow: hidden;
 }
 .video h1 {
   position: relative;
@@ -133,20 +134,41 @@
   z-index: 1;
   border-radius: 10px;
 }
+@media (max-width: 992px) {
+  .rooms .room-images img {
+    margin-bottom: 1rem;
+  }
+}
 .rooms .room-images::after {
   position: absolute;
   width: 100%;
   height: 100%;
   content: "";
-  border: 15px solid #439b4b;
+  background-color: #439b4b;
   left: -3%;
   top: 3%;
   z-index: -1;
   border-radius: 10px;
 }
+@media (max-width: 992px) {
+  .rooms .room-images::after {
+    display: none;
+  }
+}
 .rooms button {
   width: 14rem;
   height: 3rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .rooms button {
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .rooms {
+    text-align: center;
+  }
 }
 
 /* Testimonial Card */

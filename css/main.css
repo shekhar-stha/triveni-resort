@@ -11120,9 +11120,11 @@ textarea.form-control-lg {
 .nav-hero .hero a {
   -webkit-animation: shadow 3s infinite;
           animation: shadow 3s infinite;
-  width: 14rem;
   font-size: 20px;
   color: #fff;
+}
+.nav-hero .hero .fs-20 {
+  font-size: 20px;
 }
 @-webkit-keyframes shadow {
   0%, 100% {
@@ -11260,6 +11262,65 @@ textarea.form-control-lg {
   height: 75px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.team .eclipse {
+  z-index: -1;
+  right: 0;
+}
+.team .dotted {
+  z-index: -1;
+  left: 2rem;
+  bottom: 20%;
+  opacity: 0.7;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.team .member .img-div {
+  width: 100%;
+  height: 23rem;
+  overflow: hidden;
+}
+.team .member .img-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s;
+}
+.team .member h4, .team .member .h4 {
+  padding-top: 0.6rem;
+  color: #0b4c8c;
+  margin-bottom: 0.3rem;
+}
+.team .member p {
+  color: #808080;
+  font-size: 0.9rem;
+}
+.team .member .img-div:hover img {
+  transform: scale(1.03);
+  filter: brightness(60%);
+  cursor: pointer;
 }
 
 .gallery a {

@@ -1,7 +1,7 @@
 $('.team-members').slick({
     infinite: false,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     loop: true,
     autoplay: true,

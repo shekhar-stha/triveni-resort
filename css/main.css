@@ -118,6 +118,8 @@
 
 body {
   background-color: #fafafa !important;
+  width: 100vw !important;
+  overflow-x: hidden;
 }
 
 /*!
@@ -11100,7 +11102,7 @@ textarea.form-control-lg {
 .nav-hero .hero h1, .nav-hero .hero .h1 {
   line-height: 50px;
   font-size: 38px;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 @media (max-width: 768px) {
   .nav-hero .hero h1, .nav-hero .hero .h1 {
@@ -11118,13 +11120,16 @@ textarea.form-control-lg {
 .nav-hero .hero a {
   -webkit-animation: shadow 3s infinite;
           animation: shadow 3s infinite;
+  width: 14rem;
+  font-size: 20px;
+  color: #fff;
 }
 @-webkit-keyframes shadow {
   0%, 100% {
     box-shadow: none;
   }
   50% {
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3764705882), 0 0 0 10px rgba(255, 255, 255, 0.1882352941);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3764705882), 0 0 0 6px rgba(255, 255, 255, 0.1882352941);
   }
 }
 @keyframes shadow {
@@ -11132,7 +11137,7 @@ textarea.form-control-lg {
     box-shadow: none;
   }
   50% {
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3764705882), 0 0 0 10px rgba(255, 255, 255, 0.1882352941);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3764705882), 0 0 0 6px rgba(255, 255, 255, 0.1882352941);
   }
 }
 .nav-hero .hero .hero-img {
@@ -11145,6 +11150,7 @@ textarea.form-control-lg {
 
 .video {
   margin: 5rem auto !important;
+  overflow: hidden;
 }
 .video h1, .video .h1 {
   position: relative;
@@ -11186,20 +11192,41 @@ textarea.form-control-lg {
   z-index: 1;
   border-radius: 10px;
 }
+@media (max-width: 992px) {
+  .rooms .room-images img {
+    margin-bottom: 1rem;
+  }
+}
 .rooms .room-images::after {
   position: absolute;
   width: 100%;
   height: 100%;
   content: "";
-  border: 15px solid #439b4b;
+  background-color: #439b4b;
   left: -3%;
   top: 3%;
   z-index: -1;
   border-radius: 10px;
 }
+@media (max-width: 992px) {
+  .rooms .room-images::after {
+    display: none;
+  }
+}
 .rooms button {
   width: 14rem;
   height: 3rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .rooms button {
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .rooms {
+    text-align: center;
+  }
 }
 
 /* Testimonial Card */
@@ -11213,19 +11240,19 @@ textarea.form-control-lg {
 
 .testimonial-card .quote-1 {
   position: absolute;
-  width: 25px;
-  height: 20px;
+  font-size: 2rem;
   top: 0px;
   left: 0;
+  color: #439b4b;
 }
 
 .testimonial-card .quote-2 {
   position: absolute;
-  width: 25px;
-  height: 20px;
+  font-size: 2rem;
   bottom: 0px;
   right: 0;
   transform: rotate(180deg);
+  color: #439b4b;
 }
 
 .testimonial-card img {

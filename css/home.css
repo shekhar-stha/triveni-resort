@@ -59,7 +59,7 @@
     padding-bottom: 3rem;
   }
 }
-.nav-hero .hero button {
+.nav-hero .hero a {
   -webkit-animation: shadow 3s infinite;
           animation: shadow 3s infinite;
   width: 14rem;

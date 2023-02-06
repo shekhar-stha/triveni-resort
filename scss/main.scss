@@ -149,6 +149,8 @@ $grid-breakpoints: (
 
 body{
     background-color: #fafafa !important;
+    width: 100vw !important;
+    overflow-x: hidden
 }
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./home.scss";
